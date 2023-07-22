@@ -1,5 +1,5 @@
 """
-URL configuration for ibeamdjangoapp project.
+URL configuration for ibeamproject project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from ibeamdjangoapp.views import hello_world
+from ibeamapp.views import hello_world
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', hello_world, name='hello_world'),
+    path('', hello_world, name='hello_world'),
 ]
