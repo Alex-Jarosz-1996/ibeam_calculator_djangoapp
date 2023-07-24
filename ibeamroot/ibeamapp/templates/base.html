@@ -12,6 +12,7 @@
     <h1>I-beam Calculator Django App!</h1>
     
     <form method="POST">
+        {% csrf_token %}
         <div class="tooltip">&#x1F6C8;
             <span class="tooltiptext">Max stress not allowed to exceed (MPa).</span>
         </div>
