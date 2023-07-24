@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ibeamapp.views import hello_world
+from ibeamapp.views import get_ibeam_form
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello_world, name='hello_world'),
+    path('', get_ibeam_form, name='get_ibeam_form'),
 ]
